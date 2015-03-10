@@ -1,0 +1,47 @@
+{
+  "name": "webpack-angular",
+  "version": "1.0.0",
+  "description": "Example of using webpack with an angular project for an egghead.io lesson",
+  "main": "app/index.js",
+  "repository": "https://github.com/kentcdodds/webpack-angular.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_modules/.bin/webpack-dev-server --content-base app",
+    "build": "NODE_ENV=production node node_modules/.bin/webpack && cp app/index.html dist/index.html"
+  },
+  "keywords": [
+    "webpack",
+    "angular",
+    "egghead.io"
+  ],
+  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kent.doddsfamily.us)",
+  "license": "MIT",
+  "devDependencies": {
+    "angular-formly": "^4.0.8",
+    "api-check": "^6.0.10",
+    "babel": "^4.7.4",
+    "babel-core": "^4.7.4",
+    "babel-loader": "^4.1.0",
+    "css-loader": "^0.9.1",
+    "file-loader": "^0.8.1",
+    "jshint": "^2.6.3",
+    "jshint-loader": "^0.8.3",
+    "nib": "^1.1.0",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.8.3",
+    "stylus": "^0.49.3",
+    "stylus-loader": "^0.6.0",
+    "url-loader": "^0.5.5",
+    "webpack": "^1.7.2",
+    "webpack-core": "^0.5.0",
+    "webpack-dev-server": "^1.7.0"
+  },
+  "dependencies": {
+    "angular": "^1.3.14",
+    "angular-animate": "^1.3.14",
+    "angular-aria": "^1.3.14",
+    "angular-material": "^0.8.3",
+    "angular-messages": "^1.3.14",
+    "angular-ui-router": "^0.2.13"
+  }
+}
