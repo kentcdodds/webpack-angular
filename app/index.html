@@ -3,12 +3,26 @@
 <head lang="en">
   <meta charset="UTF-8">
   <title>Angular with Webpack</title>
+  <link rel="stylesheet" href="main.css"/>
 </head>
 <body>
 <a ui-sref="home">Home</a> |
 <a ui-sref="contact">Contact</a> |
 <a ui-sref="about">About</a>
 <ui-view></ui-view>
-<script src="bundle.js"></script>
+<script src="bower_components/api-check/dist/apiCheck.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-messages/angular-messages.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-formly/dist/formly.js"></script>
+
+<script src="kcdModule/kcdModule.js"></script>
+<script src="kcdModule/common/directives/kcd-greeting.js"></script>
+<script src="kcdModule/home/HomeCtrl.js"></script>
+<script src="kcdModule/about/AboutCtrl.js"></script>
+<script src="kcdModule/contact/ContactCtrl.js"></script>
+<script src="bootstrap.js"></script>
 </body>
 </html>

@@ -1,12 +1,11 @@
-export default ngModule => {
-  ngModule.directive('kcdGreeting', kcdGreeting);
-
-  require('./kcd-greeting.styl');
+(function() {
+  'use strict';
+  angular.module('kcdModule').directive('kcdGreeting', kcdGreeting);
 
   function kcdGreeting() {
     return {
       restrict: 'E',
-      template: require('./kcd-greeting.html'),
+      templateUrl: 'kcdModule/common/directives/kcd-greeting.html',
       scope: {
         greeted: '@'
       },
@@ -15,4 +14,4 @@ export default ngModule => {
       controller: angular.noop
     };
   }
-};
+})();
