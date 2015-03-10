@@ -1,0 +1,24 @@
+{
+  "name": "webpack-angular",
+  "version": "1.0.0",
+  "authors": [
+    "Kent C. Dodds <kent+github@doddsfamily.us>"
+  ],
+  "description": "Example of using angular with webpack",
+  "main": "app/index.html",
+  "keywords": [
+    "egghead.io",
+    "angular",
+    "webpack"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.3.14",
+    "angular-ui-router": "~0.2.13",
+    "angular-formly": "~4.0.8",
+    "angular-aria": "~1.3.14",
+    "angular-messages": "~1.3.14",
+    "angular-animate": "~1.3.14"
+  }
+}
