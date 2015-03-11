@@ -1,3 +1,4 @@
+var webpack = require('webpack');
 module.exports = {
   context: __dirname + '/app',
   entry: './index.js',
@@ -5,6 +6,16 @@ module.exports = {
     path: __dirname + '/app',
     filename: 'bundle.js'
   },
+
+  devtool: 'eval',
+
+  plugins: [
+    new webpack.DefinePlugin({
+      ON_DEV: !process.env.NODE_ENV || process.env.NODE_ENV === 'development',
+      ON_TEST: process.env.NODE_ENV === 'test',
+      ON_PROD: process.env.NODE_ENV === 'production',
+    })
+  ],
 
   module: {
     loaders: [
