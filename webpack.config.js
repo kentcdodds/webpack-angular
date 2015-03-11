@@ -1,3 +1,5 @@
+var webpack = require('webpack');
+
 module.exports = {
   context: __dirname + '/app',
   entry: './index.js',
@@ -5,6 +7,12 @@ module.exports = {
     path: __dirname + '/app',
     filename: 'bundle.js'
   },
+
+  plugins: [
+    new webpack.DefinePlugin({
+      ON_TEST: process.env.NODE_ENV === 'test'
+    })
+  ],
 
   module: {
     loaders: [
