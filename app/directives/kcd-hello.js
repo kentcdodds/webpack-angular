@@ -1,5 +1,6 @@
 export default ngModule => {
   ngModule.directive('kcdHello', () => {
+    require('./kcd-hello.styl');
     return {
       restrict: 'E',
       scope: {},
