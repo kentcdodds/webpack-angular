@@ -1,3 +1,5 @@
+import registerKcdHello from './kcd-hello'
 export default ngModule => {
-  require('./kcd-hello')(ngModule);
+  registerKcdHello(ngModule);
 };
+
